@@ -103,7 +103,7 @@ function draw() {
   
       task.deleteButton.addEventListener("click", function() {
         if (confirm("are you sure?")) {
-          tasks.slice(i, 1);
+          tasks.splice(i, 1);
           task.item.remove();
 
           localStorage.setItem("todo", JSON.stringify(tasks));
